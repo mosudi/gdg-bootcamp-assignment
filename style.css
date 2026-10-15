@@ -1,0 +1,977 @@
+/* ==========================================================================
+   LEGIT.NG CORPORATE BLOG - EXTERNAL STYLESHEET (style.css)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   CSS Custom Properties (Theme Variables & Palette Tokens)
+   -------------------------------------------------------------------------- */
+:root {
+    /* Brand Color Palette */
+    --color-primary: #0f172a;          /* Deep Slate / Midnight */
+    --color-primary-light: #1e293b;    /* Lighter Slate for hover states */
+    --color-primary-dark: #020617;     /* Darkest Slate */
+    
+    --color-accent: #fdb813;           /* Legit.ng Signature Gold / Yellow */
+    --color-accent-hover: #e09f07;     /* Deeper Amber for interactions */
+    --color-accent-soft: #fef3c7;      /* Warm golden badge background */
+    --color-accent-text: #92400e;      /* Readable amber text for badges */
+    
+    --color-bg-page: #f8fafc;          /* Canvas background (soft off-white) */
+    --color-bg-surface: #ffffff;       /* Pure white for cards and widgets */
+    --color-bg-muted: #f1f5f9;         /* Light grey for containers & tags */
+    --color-bg-dark: #0b1120;          /* Deep dark slate for footer */
+    
+    --color-text-heading: #0f172a;     /* High contrast headings */
+    --color-text-body: #334155;        /* Crisp readable paragraph text */
+    --color-text-muted: #64748b;       /* Secondary metadata & timestamps */
+    --color-text-inverse: #ffffff;     /* White text on dark surfaces */
+    
+    /* Visible Border Palette */
+    --color-border-light: #e2e8f0;     /* Subtle section divider border */
+    --color-border-strong: #cbd5e1;    /* Prominent card and input border */
+    --color-border-accent: #fdb813;    /* Highlight / active border */
+    
+    /* Typography Tokens */
+    --font-heading: 'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    
+    /* Box Model Defaults */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 18px;
+    --radius-full: 9999px;
+    
+    /* Depth & Elevation */
+    --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08);
+    --shadow-md: 0 4px 12px -2px rgba(15, 23, 42, 0.08), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
+    --shadow-lg: 0 12px 24px -4px rgba(15, 23, 42, 0.12), 0 4px 10px -2px rgba(15, 23, 42, 0.04);
+    --shadow-glow: 0 0 0 3px rgba(253, 184, 19, 0.25);
+    
+    /* Motion Transitions */
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ==========================================================================
+   PART 1 - REQUIRED TASK: GLOBAL RESET
+   Apply box-sizing: border-box across all elements using universal selector (*)
+   ========================================================================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================================================
+   PART 1 - REQUIRED TASK: SELECTORS & COLORS (Element Selectors)
+   Styling base HTML elements: body, h1, h2, h3, p, a, etc.
+   ========================================================================== */
+
+/* Body Element Selector: Background & Typography Foundation */
+body {
+    background-color: var(--color-bg-page);
+    color: var(--color-text-body);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Heading Element Selectors */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-text-heading);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+}
+
+/* H1 Element Selector */
+h1 {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+/* H2 Element Selector */
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+/* H3 Element Selector */
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Paragraph Element Selector */
+p {
+    margin-bottom: 1rem;
+    color: var(--color-text-body);
+}
+
+/* Anchor (Link) Element Selector */
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+a:hover {
+    color: var(--color-accent-hover);
+}
+
+/* Image Element Selector */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Unordered List & List Item Elements */
+ul, ol {
+    list-style: none;
+}
+
+/* Time Element Selector */
+time {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+}
+
+/* Form Elements Reset & Base */
+input, button, select, textarea {
+    font: inherit;
+    color: inherit;
+}
+
+/* ==========================================================================
+   PART 1 - REQUIRED TASK: THE BOX MODEL IN ACTION
+   Explicit width, padding, border, and margin on containers, blocks, and cards.
+   Visible borders to distinguish sections and containers.
+   ========================================================================== */
+
+/* Main Container Wrapper (The Box Model in Action: width, padding, margin) */
+.container {
+    width: 100%;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+/* Two-Column Grid Layout for Main Content & Sidebar */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 36px;
+    align-items: start;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 60px;
+}
+
+/* Blog Articles Section Container with Visible Border */
+.articles-section {
+    width: 100%;
+    background-color: var(--color-bg-surface);
+    border: 2px solid var(--color-border-light);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    margin-bottom: 32px;
+    box-shadow: var(--shadow-sm);
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 28px;
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+/* ==========================================================================
+   PART 1 - REQUIRED TASK: CLASS SELECTORS (.card, .btn)
+   ========================================================================== */
+
+/* .card Class Selector (The Box Model: width, padding, border, margin) */
+.card {
+    width: 100%;
+    background-color: var(--color-bg-surface);
+    border: 2px solid var(--color-border-light);
+    border-radius: var(--radius-md);
+    padding: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-smooth);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-accent);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Article Card Media Box */
+.card-media {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: var(--color-bg-muted);
+    aspect-ratio: 16 / 9;
+    border-bottom: 2px solid var(--color-border-light);
+}
+
+.card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card:hover .card-media img {
+    transform: scale(1.05);
+}
+
+/* Card Media Tag / Figcaption */
+.card-media figcaption {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background-color: rgba(15, 23, 42, 0.88);
+    backdrop-filter: blur(6px);
+    color: var(--color-accent);
+    font-size: 0.725rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 4px 10px;
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(253, 184, 19, 0.3);
+    max-width: calc(100% - 24px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Card Content / Body (Box Model: padding, margin) */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 22px 20px;
+    width: 100%;
+}
+
+.card-header {
+    margin-bottom: 12px;
+}
+
+.card-date {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.card-date::before {
+    content: "•";
+    color: var(--color-accent);
+    font-size: 1.2rem;
+    line-height: 0;
+}
+
+.card-title {
+    font-size: 1.15rem;
+    line-height: 1.35;
+    margin-bottom: 8px;
+}
+
+.card-title a {
+    color: var(--color-text-heading);
+}
+
+.card-title a:hover {
+    color: #b45309;
+}
+
+.card-excerpt {
+    font-size: 0.925rem;
+    color: var(--color-text-body);
+    line-height: 1.55;
+    margin-bottom: 18px;
+    flex-grow: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-footer {
+    margin-top: auto;
+    padding-top: 14px;
+    border-top: 1px dashed var(--color-border-light);
+}
+
+/* .btn Class Selector (The Box Model in Action: width, padding, border, margin) */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all var(--transition-fast);
+}
+
+/* Primary Button Styling */
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-text-inverse);
+    border-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(253, 184, 19, 0.35);
+}
+
+/* Accent Button Styling */
+.btn-accent {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    border-color: var(--color-accent);
+}
+
+.btn-accent:hover {
+    background-color: var(--color-accent-hover);
+    border-color: var(--color-accent-hover);
+    color: var(--color-text-inverse);
+    transform: translateY(-2px);
+}
+
+/* Outline Button Styling */
+.btn-outline {
+    background-color: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-outline:hover {
+    background-color: var(--color-primary);
+    color: var(--color-text-inverse);
+    transform: translateY(-2px);
+}
+
+/* Badge Component */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: var(--radius-full);
+    margin-bottom: 10px;
+    background-color: var(--color-accent-soft);
+    color: var(--color-accent-text);
+    border: 1px solid rgba(253, 184, 19, 0.4);
+}
+
+/* ==========================================================================
+   PART 1 - REQUIRED TASK: ID SELECTORS
+   Styling specific sections and elements by ID
+   ========================================================================== */
+
+/* #search-input: Targeted ID Selector for Search Form Field */
+#search-input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    background-color: var(--color-bg-surface);
+    color: var(--color-text-heading);
+    border: 2px solid var(--color-border-strong);
+    border-radius: var(--radius-sm);
+    margin-bottom: 10px;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: var(--shadow-glow);
+}
+
+/* #newsletter-form: Targeted ID Selector for Newsletter Container */
+#newsletter-form {
+    background: linear-gradient(145deg, #ffffff 0%, #fffbeb 100%);
+    border: 2px solid #fde68a;
+    border-radius: var(--radius-md);
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#newsletter-email {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    background-color: #ffffff;
+    border: 2px solid var(--color-border-strong);
+    border-radius: var(--radius-sm);
+    margin-bottom: 12px;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+#newsletter-email:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: var(--shadow-glow);
+}
+
+/* #blog-articles-heading: Targeted ID Selector for Main Articles Heading */
+#blog-articles-heading {
+    position: relative;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+    border-bottom: 3px solid var(--color-accent);
+    display: inline-block;
+}
+
+/* #blog-sidebar: Targeted ID Selector for Aside Supplementary Column */
+#blog-sidebar {
+    width: 100%;
+    position: sticky;
+    top: 24px;
+}
+
+/* #site-footer: Targeted ID Selector for Global Footer */
+#site-footer {
+    width: 100%;
+    background-color: var(--color-bg-dark);
+    color: #94a3b8;
+    border-top: 4px solid var(--color-accent);
+    margin-top: auto;
+    padding-top: 56px;
+    padding-bottom: 32px;
+}
+
+/* ==========================================================================
+   SITE HEADER & PRIMARY NAVIGATION
+   Visible borders, rich corporate styling, and dropdown menu support
+   ========================================================================== */
+.site-header {
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 2px solid var(--color-border-light);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow-sm);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    gap: 20px;
+}
+
+.brand-link {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.brand-link img {
+    height: 38px;
+    width: auto;
+}
+
+/* Navigation List */
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav > ul {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.main-nav li {
+    position: relative;
+}
+
+.main-nav a {
+    display: inline-block;
+    padding: 8px 14px;
+    font-size: 0.925rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    border-radius: var(--radius-sm);
+    border: 1px solid transparent;
+}
+
+.main-nav a:hover,
+.main-nav a[aria-current="page"] {
+    color: var(--color-primary);
+    background-color: var(--color-accent-soft);
+    border-color: rgba(253, 184, 19, 0.4);
+}
+
+/* Navigation Dropdown Menu */
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown > ul {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    width: 320px;
+    background-color: #ffffff;
+    border: 2px solid var(--color-border-light);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    padding: 10px 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+    z-index: 1050;
+}
+
+.nav-dropdown:hover > ul,
+.nav-dropdown:focus-within > ul {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.nav-dropdown > ul li a {
+    display: block;
+    padding: 10px 14px;
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    color: var(--color-text-body);
+}
+
+.nav-dropdown > ul li a:hover {
+    background-color: var(--color-bg-muted);
+    color: var(--color-primary);
+}
+
+.nav-dropdown > ul strong {
+    display: block;
+    color: var(--color-primary);
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.nav-dropdown > ul small {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+}
+
+/* Header Social Media Channels */
+.header-social ul {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: var(--radius-sm);
+    background-color: var(--color-bg-muted);
+    border: 1px solid var(--color-border-light);
+}
+
+.header-social a:hover {
+    background-color: var(--color-accent-soft);
+    border-color: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   BREADCRUMB & HERO PAGE HEADER
+   ========================================================================== */
+.breadcrumb-nav {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.breadcrumb-nav ol {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+}
+
+.breadcrumb-nav li + li::before {
+    content: "/";
+    margin-right: 8px;
+    color: var(--color-border-strong);
+}
+
+.breadcrumb-nav a {
+    color: var(--color-text-muted);
+}
+
+.breadcrumb-nav a:hover {
+    color: var(--color-primary);
+}
+
+.breadcrumb-nav [aria-current="page"] {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+/* Page Hero Banner */
+.page-hero {
+    width: 100%;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #ffffff;
+    border: 2px solid var(--color-primary-light);
+    border-radius: var(--radius-lg);
+    padding: 48px 40px;
+    margin-bottom: 36px;
+    box-shadow: var(--shadow-md);
+    position: relative;
+    overflow: hidden;
+}
+
+.page-hero::after {
+    content: "";
+    position: absolute;
+    right: -40px;
+    bottom: -40px;
+    width: 240px;
+    height: 240px;
+    background: radial-gradient(circle, rgba(253, 184, 19, 0.2) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.page-hero h1 {
+    color: #ffffff;
+    font-size: 3rem;
+    margin-bottom: 8px;
+}
+
+.page-hero p {
+    color: #cbd5e1;
+    font-size: 1.15rem;
+    max-width: 680px;
+    margin-bottom: 0;
+}
+
+/* Pagination Navigation */
+.pagination-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-nav ul {
+    display: flex;
+    gap: 8px;
+}
+
+/* ==========================================================================
+   SIDEBAR WIDGETS & FORMS
+   Visible borders, padding, margin, and distinct card styling
+   ========================================================================== */
+.sidebar-card {
+    background-color: var(--color-bg-surface);
+    border: 2px solid var(--color-border-light);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    margin-bottom: 28px;
+    box-shadow: var(--shadow-sm);
+}
+
+.sidebar-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--color-border-light);
+    color: var(--color-primary);
+}
+
+/* Form Controls Inside Sidebar */
+.form-label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text-heading);
+    margin-bottom: 6px;
+}
+
+.form-fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.form-legend {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 8px;
+}
+
+.form-desc {
+    font-size: 0.875rem;
+    color: var(--color-text-body);
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+
+/* Category Pill Links */
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.category-pill {
+    display: inline-block;
+    padding: 8px 14px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    background-color: var(--color-bg-muted);
+    color: var(--color-primary);
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-fast);
+}
+
+.category-pill:hover {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    border-color: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+/* Featured Video Widget */
+.featured-video-box {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.featured-video-box video {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-border-strong);
+    display: block;
+}
+
+.featured-video-box figcaption {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    margin-top: 8px;
+    line-height: 1.4;
+}
+
+/* ==========================================================================
+   FOOTER STYLES
+   Visible borders, rich dark theme, multi-column layout, and social channels
+   ========================================================================== */
+.footer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #1e293b;
+    margin-bottom: 36px;
+}
+
+.footer-header h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.footer-logo {
+    height: 48px;
+    width: auto;
+}
+
+/* Multi-column Grid in Footer */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 36px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #1e293b;
+}
+
+.footer-section h3 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    position: relative;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--color-accent);
+    display: inline-block;
+}
+
+.footer-section h4 {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    margin-top: 14px;
+    margin-bottom: 6px;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.footer-section a {
+    color: #94a3b8;
+}
+
+.footer-section a:hover {
+    color: var(--color-accent);
+}
+
+/* Award Badges in Footer */
+.footer-awards-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.footer-awards-list li a {
+    display: inline-flex;
+    padding: 10px;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: var(--radius-sm);
+    transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.footer-awards-list li a:hover {
+    border-color: var(--color-accent);
+    transform: translateY(-3px);
+}
+
+/* Social Media Channels Grid in Footer */
+.footer-social-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.footer-social-list li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-sm);
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    transition: all var(--transition-fast);
+}
+
+.footer-social-list li a:hover {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    padding-top: 24px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (Media Queries)
+   ========================================================================== */
+@media (max-width: 1024px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    #blog-sidebar {
+        position: static;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .main-nav > ul {
+        flex-wrap: wrap;
+    }
+    
+    .page-hero {
+        padding: 32px 20px;
+    }
+    
+    .page-hero h1 {
+        font-size: 2.25rem;
+    }
+    
+    .articles-section {
+        padding: 20px;
+    }
+    
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+}

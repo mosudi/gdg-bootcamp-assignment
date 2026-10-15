@@ -5,542 +5,593 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Read the latest news, upcoming projects, industry updates, case-studies, awards and job opportunities from Legit.ng News team.">
     <title>Blog | Legit.ng Corporate</title>
+
+    <!-- Google Fonts for Modern Editorial & Corporate Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- External Stylesheet (Part 1: Required Task) -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Site Header & Primary Navigation -->
-    <header>
-        <a href="/" aria-label="Legit.ng Homepage">
-            <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f4c4dbc9a2047edbf934c3_legit-ng_logo.png" alt="Legit.ng Logo" width="160" height="40">
-        </a>
+    <header class="site-header">
+        <div class="header-container container">
+            <a href="/" class="brand-link" aria-label="Legit.ng Homepage">
+                <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f4c4dbc9a2047edbf934c3_legit-ng_logo.png" alt="Legit.ng Logo" width="160" height="40">
+            </a>
 
-        <!-- Main Navigation Bar -->
-        <nav aria-label="Main Navigation">
-            <ul>
-                <li><a href="/">About</a></li>
-                <li>
-                    <a href="/advertising-solutions">Advertising Solutions</a>
-                    <!-- Submenu: Advertising Solutions -->
-                    <ul>
-                        <li>
-                            <a href="/advertising-solutions">
-                                <strong>Why should you advertise with us?</strong>
-                                <small>Audience and Statistics | Our Clients</small>
-                            </a>
-                        </li>
-                        <li><a href="/desktop-mobile-banners-advertisement">Desktop / Mobile Banners</a></li>
-                        <li><a href="/display-rich-media-formats">Rich Media Formats</a></li>
-                        <li>
-                            <a href="/social-media-branded-posts">
-                                <strong>Social Media Branded Posts</strong>
-                                <small>Facebook | Instagram | Twitter</small>
-                            </a>
-                        </li>
-                        <li><a href="/pr-native-articles">PR and Native Articles</a></li>
-                        <li><a href="/video-production-and-promotion">Video Production and Promoting</a></li>
-                        <li><a href="/special-projects">Special Projects</a></li>
-                        <li><a href="/case-study/case-studies">Case Study Portfolio</a></li>
-                    </ul>
-                </li>
-                <li><a href="/blog" aria-current="page">Blog</a></li>
-                <li><a href="/jobs-list">Jobs</a></li>
-                <li><a href="/awards">Awards</a></li>
-                <li><a href="/courses/courses" target="_blank" rel="noopener noreferrer">Legit.ng Copywriting Course</a></li>
-                <li><a href="/contacts">Contacts</a></li>
-            </ul>
-        </nav>
+            <!-- Main Navigation Bar -->
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="/">About</a></li>
+                    <li class="nav-dropdown">
+                        <a href="/advertising-solutions">Advertising Solutions &#9662;</a>
+                        <!-- Submenu: Advertising Solutions -->
+                        <ul>
+                            <li>
+                                <a href="/advertising-solutions">
+                                    <strong>Why should you advertise with us?</strong>
+                                    <small>Audience and Statistics | Our Clients</small>
+                                </a>
+                            </li>
+                            <li><a href="/desktop-mobile-banners-advertisement">Desktop / Mobile Banners</a></li>
+                            <li><a href="/display-rich-media-formats">Rich Media Formats</a></li>
+                            <li>
+                                <a href="/social-media-branded-posts">
+                                    <strong>Social Media Branded Posts</strong>
+                                    <small>Facebook | Instagram | Twitter</small>
+                                </a>
+                            </li>
+                            <li><a href="/pr-native-articles">PR and Native Articles</a></li>
+                            <li><a href="/video-production-and-promotion">Video Production and Promoting</a></li>
+                            <li><a href="/special-projects">Special Projects</a></li>
+                            <li><a href="/case-study/case-studies">Case Study Portfolio</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/blog" aria-current="page">Blog</a></li>
+                    <li><a href="/jobs-list">Jobs</a></li>
+                    <li><a href="/awards">Awards</a></li>
+                    <li><a href="/courses/courses" target="_blank" rel="noopener noreferrer">Legit.ng Copywriting Course</a></li>
+                    <li><a href="/contacts">Contacts</a></li>
+                </ul>
+            </nav>
 
-        <!-- Social Media Channels in Header -->
-        <aside aria-label="Header Social Media Links">
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/legitngnews/" target="_blank" rel="noopener noreferrer" aria-label="Legit.ng on Facebook">
-                        <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e595d2817bbfd94082_fb_yellow.png" alt="Facebook" width="20" height="20">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/@legitngnews" target="_blank" rel="noopener noreferrer" aria-label="Legit.ng on YouTube">
-                        <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e6f6f2d9b891cca3c7_youtube_yellow.png" alt="YouTube" width="20" height="20">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/legit.ng/" target="_blank" rel="noopener noreferrer" aria-label="Legit.ng on Instagram">
-                        <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e59d914de177dbbc8d_inst_yellow.png" alt="Instagram" width="20" height="20">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/legitngnews" target="_blank" rel="noopener noreferrer" aria-label="Legit.ng on X">
-                        <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/650c70f8466964051e95249a_x%20logo%20legit%20yellow.svg" alt="X Logo" width="20" height="20">
-                    </a>
-                </li>
-            </ul>
-        </aside>
+            <!-- Social Media Channels in Header -->
+            <aside class="header-social" aria-label="Header Social Media Links">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/legitngnews/" target="_blank" rel="noopener noreferrer" aria-label="Legit.ng on Facebook">
+                            <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e595d2817bbfd94082_fb_yellow.png" alt="Facebook" width="20" height="20">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@legitngnews" target="_blank" rel="noopener noreferrer" aria-label="Legit.ng on YouTube">
+                            <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e6f6f2d9b891cca3c7_youtube_yellow.png" alt="YouTube" width="20" height="20">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/legit.ng/" target="_blank" rel="noopener noreferrer" aria-label="Legit.ng on Instagram">
+                            <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e59d914de177dbbc8d_inst_yellow.png" alt="Instagram" width="20" height="20">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/legitngnews" target="_blank" rel="noopener noreferrer" aria-label="Legit.ng on X">
+                            <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/650c70f8466964051e95249a_x%20logo%20legit%20yellow.svg" alt="X Logo" width="20" height="20">
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
     </header>
 
     <!-- Breadcrumb Navigation -->
-    <nav aria-label="Breadcrumb">
-        <ol>
-            <li><a href="/">Home</a></li>
-            <li aria-current="page">Blog</li>
-        </ol>
-    </nav>
+    <div class="container">
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+            <ol>
+                <li><a href="/">Home</a></li>
+                <li aria-current="page">Blog</li>
+            </ol>
+        </nav>
+    </div>
 
     <!-- Main Content Area -->
-    <main>
-        <!-- Page Title -->
-        <h1>Blog</h1>
+    <main class="container" id="main-content">
+        <!-- Page Title & Hero Header -->
+        <header class="page-hero">
+            <span class="badge">Official Newsroom</span>
+            <h1>Blog</h1>
+            <p>Read the latest news, upcoming projects, industry updates, case studies, awards, and insights from the Legit.ng media team.</p>
+        </header>
 
-        <!-- Blog Posts Section -->
-        <section aria-labelledby="blog-articles-heading">
-            <h2 id="blog-articles-heading">Latest News &amp; Updates</h2>
+        <!-- Two-Column Grid for Articles & Sidebar -->
+        <div class="content-grid">
+            <!-- Blog Articles Section -->
+            <section class="articles-section" aria-labelledby="blog-articles-heading">
+                <h2 id="blog-articles-heading">Latest News &amp; Updates</h2>
 
-            <!-- Article 1 -->
-            <article>
-                <figure>
-                    <a href="https://www.legit.ng/editorial/feature/1735663-legitng-wins-excellence-digital-journalism-global-brands-awards-2026/" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.prod.website-files.com/64f5e1504c20c64e728469d9/6acccf73dc826b63fccfe191_FELIX%20Legit.ng%20Article_with_disclaimer%2019201080%20(14).png" alt="Legit.ng Wins Excellence in Digital Journalism Award banner" loading="lazy">
-                    </a>
-                    <figcaption>Award announcement: Global Brands Awards 2026</figcaption>
-                </figure>
-                <header>
-                    <time datetime="2026-10-12">October 12, 2026</time>
-                    <h3>
-                        <a href="https://www.legit.ng/editorial/feature/1735663-legitng-wins-excellence-digital-journalism-global-brands-awards-2026/" target="_blank" rel="noopener noreferrer">
-                            Legit.ng Wins Excellence in Digital Journalism &amp; News Reporting at the Global Brands Awards 2026
-                        </a>
-                    </h3>
-                </header>
-                <p>Legit.ng has won the title for Excellence in Digital Journalism &amp; News Reporting in Nigeria at the Global Brands Awards 2026, by the London-based publication Global Brands Magazine.</p>
-                <footer>
-                    <a href="https://www.legit.ng/editorial/feature/1735663-legitng-wins-excellence-digital-journalism-global-brands-awards-2026/" target="_blank" rel="noopener noreferrer">Read article</a>
-                </footer>
-            </article>
+                <div class="articles-grid">
+                    <!-- Article 1 -->
+                    <article class="card article-card">
+                        <figure class="card-media">
+                            <a href="https://www.legit.ng/editorial/feature/1735663-legitng-wins-excellence-digital-journalism-global-brands-awards-2026/" target="_blank" rel="noopener noreferrer">
+                                <img src="https://cdn.prod.website-files.com/64f5e1504c20c64e728469d9/6acccf73dc826b63fccfe191_FELIX%20Legit.ng%20Article_with_disclaimer%2019201080%20(14).png" alt="Legit.ng Wins Excellence in Digital Journalism Award banner" loading="lazy">
+                            </a>
+                            <figcaption>Global Brands Awards 2026</figcaption>
+                        </figure>
+                        <div class="card-content">
+                            <header class="card-header">
+                                <time datetime="2026-10-12" class="card-date">October 12, 2026</time>
+                                <h3 class="card-title">
+                                    <a href="https://www.legit.ng/editorial/feature/1735663-legitng-wins-excellence-digital-journalism-global-brands-awards-2026/" target="_blank" rel="noopener noreferrer">
+                                        Legit.ng Wins Excellence in Digital Journalism &amp; News Reporting at the Global Brands Awards 2026
+                                    </a>
+                                </h3>
+                            </header>
+                            <p class="card-excerpt">Legit.ng has won the title for Excellence in Digital Journalism &amp; News Reporting in Nigeria at the Global Brands Awards 2026, by the London-based publication Global Brands Magazine.</p>
+                            <footer class="card-footer">
+                                <a href="https://www.legit.ng/editorial/feature/1735663-legitng-wins-excellence-digital-journalism-global-brands-awards-2026/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Read article &rarr;</a>
+                            </footer>
+                        </div>
+                    </article>
 
-            <!-- Article 2 -->
-            <article>
-                <figure>
-                    <a href="https://www.legit.ng/editorial/1733276-legitng-official-media-partner-federal-governments-3mtt-programme/" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.prod.website-files.com/64f5e1504c20c64e728469d9/6abd3951d823085f80e99bf8_FELIX%20Legit.ng%20Article_with_disclaimer%201920_1080.png" alt="Legit.ng 3MTT Media Partnership banner" loading="lazy">
-                    </a>
-                    <figcaption>Federal Government 3MTT Media Partnership</figcaption>
-                </figure>
-                <header>
-                    <time datetime="2026-09-30">September 30, 2026</time>
-                    <h3>
-                        <a href="https://www.legit.ng/editorial/1733276-legitng-official-media-partner-federal-governments-3mtt-programme/" target="_blank" rel="noopener noreferrer">
-                            Legit.ng Becomes Official Media Partner of the Federal Government's 3MTT Programme
-                        </a>
-                    </h3>
-                </header>
-                <p>Legit.ng officially acknowledged as a 3MTT Media Partner under the Federal Ministry of Communications, Innovation and Digital Economy</p>
-                <footer>
-                    <a href="https://www.legit.ng/editorial/1733276-legitng-official-media-partner-federal-governments-3mtt-programme/" target="_blank" rel="noopener noreferrer">Read article</a>
-                </footer>
-            </article>
+                    <!-- Article 2 -->
+                    <article class="card article-card">
+                        <figure class="card-media">
+                            <a href="https://www.legit.ng/editorial/1733276-legitng-official-media-partner-federal-governments-3mtt-programme/" target="_blank" rel="noopener noreferrer">
+                                <img src="https://cdn.prod.website-files.com/64f5e1504c20c64e728469d9/6abd3951d823085f80e99bf8_FELIX%20Legit.ng%20Article_with_disclaimer%201920_1080.png" alt="Legit.ng 3MTT Media Partnership banner" loading="lazy">
+                            </a>
+                            <figcaption>Federal Government 3MTT Partnership</figcaption>
+                        </figure>
+                        <div class="card-content">
+                            <header class="card-header">
+                                <time datetime="2026-09-30" class="card-date">September 30, 2026</time>
+                                <h3 class="card-title">
+                                    <a href="https://www.legit.ng/editorial/1733276-legitng-official-media-partner-federal-governments-3mtt-programme/" target="_blank" rel="noopener noreferrer">
+                                        Legit.ng Becomes Official Media Partner of the Federal Government's 3MTT Programme
+                                    </a>
+                                </h3>
+                            </header>
+                            <p class="card-excerpt">Legit.ng officially acknowledged as a 3MTT Media Partner under the Federal Ministry of Communications, Innovation and Digital Economy</p>
+                            <footer class="card-footer">
+                                <a href="https://www.legit.ng/editorial/1733276-legitng-official-media-partner-federal-governments-3mtt-programme/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Read article &rarr;</a>
+                            </footer>
+                        </div>
+                    </article>
 
-            <!-- Article 3 -->
-            <article>
-                <figure>
-                    <a href="https://www.legit.ng/editorial/opinion/1733638-the-newsrooms-winning-worlds-trust-african/" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.prod.website-files.com/64f5e1504c20c64e728469d9/6abd30cc33692962d7ce741e_Global%20News%20Trust.png" alt="Global News Trust graphic" loading="lazy">
-                    </a>
-                    <figcaption>African Newsrooms building trust worldwide</figcaption>
-                </figure>
-                <header>
-                    <time datetime="2026-09-30">September 30, 2026</time>
-                    <h3>
-                        <a href="https://www.legit.ng/editorial/opinion/1733638-the-newsrooms-winning-worlds-trust-african/" target="_blank" rel="noopener noreferrer">
-                            The Newsrooms Winning the World's Trust Now Are African
-                        </a>
-                    </h3>
-                </header>
-                <p>Trust in news media has fallen to its lowest point since anyone started measuring it. In this piece, Felix Imoh, Legit.ng's PR Manager, balances the pivot on the way forward for publishers.</p>
-                <footer>
-                    <a href="https://www.legit.ng/editorial/opinion/1733638-the-newsrooms-winning-worlds-trust-african/" target="_blank" rel="noopener noreferrer">Read article</a>
-                </footer>
-            </article>
+                    <!-- Article 3 -->
+                    <article class="card article-card">
+                        <figure class="card-media">
+                            <a href="https://www.legit.ng/editorial/opinion/1733638-the-newsrooms-winning-worlds-trust-african/" target="_blank" rel="noopener noreferrer">
+                                <img src="https://cdn.prod.website-files.com/64f5e1504c20c64e728469d9/6abd30cc33692962d7ce741e_Global%20News%20Trust.png" alt="Global News Trust graphic" loading="lazy">
+                            </a>
+                            <figcaption>African Newsrooms Building Trust</figcaption>
+                        </figure>
+                        <div class="card-content">
+                            <header class="card-header">
+                                <time datetime="2026-09-30" class="card-date">September 30, 2026</time>
+                                <h3 class="card-title">
+                                    <a href="https://www.legit.ng/editorial/opinion/1733638-the-newsrooms-winning-worlds-trust-african/" target="_blank" rel="noopener noreferrer">
+                                        The Newsrooms Winning the World's Trust Now Are African
+                                    </a>
+                                </h3>
+                            </header>
+                            <p class="card-excerpt">Trust in news media has fallen to its lowest point since anyone started measuring it. In this piece, Felix Imoh, Legit.ng's PR Manager, balances the pivot on the way forward for publishers.</p>
+                            <footer class="card-footer">
+                                <a href="https://www.legit.ng/editorial/opinion/1733638-the-newsrooms-winning-worlds-trust-african/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Read article &rarr;</a>
+                            </footer>
+                        </div>
+                    </article>
 
-            <!-- Article 4 -->
-            <article>
-                <figure>
-                    <a href="https://www.legit.ng/editorial/opinion/1711663-what-ai-tools-doesnt-understand-hausa-idiom-report/" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.prod.website-files.com/64f5e1504c20c64e728469d9/6abd0bffd13bf25d1f43cea1_373f28a7db432234.jpeg" alt="Illustration representing AI translation and Hausa idiom" loading="lazy">
-                    </a>
-                    <figcaption>AI tools and cultural nuance in journalism</figcaption>
-                </figure>
-                <header>
-                    <time datetime="2026-09-29">September 29, 2026</time>
-                    <h3>
-                        <a href="https://www.legit.ng/editorial/opinion/1711663-what-ai-tools-doesnt-understand-hausa-idiom-report/" target="_blank" rel="noopener noreferrer">
-                            What Happens When an AI Tool Doesn’t Understand Hausa Idiom and We Report it Anyway?
-                        </a>
-                    </h3>
-                </header>
-                <p>''Using an AI fact-checker on Hausa content without cultural calibration is not innovation. It is outsourcing editorial judgment to a tool that will give you a confident wrong answer and log it as accuracy,'' says Salisu Ibrahim, Head of Hausa Desk at Legit.ng.</p>
-                <footer>
-                    <a href="https://www.legit.ng/editorial/opinion/1711663-what-ai-tools-doesnt-understand-hausa-idiom-report/" target="_blank" rel="noopener noreferrer">Read article</a>
-                </footer>
-            </article>
+                    <!-- Article 4 -->
+                    <article class="card article-card">
+                        <figure class="card-media">
+                            <a href="https://www.legit.ng/editorial/opinion/1711663-what-ai-tools-doesnt-understand-hausa-idiom-report/" target="_blank" rel="noopener noreferrer">
+                                <img src="https://cdn.prod.website-files.com/64f5e1504c20c64e728469d9/6abd0bffd13bf25d1f43cea1_373f28a7db432234.jpeg" alt="Illustration representing AI translation and Hausa idiom" loading="lazy">
+                            </a>
+                            <figcaption>AI Tools &amp; Cultural Nuance</figcaption>
+                        </figure>
+                        <div class="card-content">
+                            <header class="card-header">
+                                <time datetime="2026-09-29" class="card-date">September 29, 2026</time>
+                                <h3 class="card-title">
+                                    <a href="https://www.legit.ng/editorial/opinion/1711663-what-ai-tools-doesnt-understand-hausa-idiom-report/" target="_blank" rel="noopener noreferrer">
+                                        What Happens When an AI Tool Doesn’t Understand Hausa Idiom and We Report it Anyway?
+                                    </a>
+                                </h3>
+                            </header>
+                            <p class="card-excerpt">''Using an AI fact-checker on Hausa content without cultural calibration is not innovation. It is outsourcing editorial judgment to a tool that will give you a confident wrong answer and log it as accuracy,'' says Salisu Ibrahim, Head of Hausa Desk at Legit.ng.</p>
+                            <footer class="card-footer">
+                                <a href="https://www.legit.ng/editorial/opinion/1711663-what-ai-tools-doesnt-understand-hausa-idiom-report/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Read article &rarr;</a>
+                            </footer>
+                        </div>
+                    </article>
 
-            <!-- Article 5 -->
-            <article>
-                <figure>
-                    <a href="https://www.legit.ng/editorial/1730258-felix-imoh-joins-inma-2026-30-30-class-nigerian-honoured/" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.prod.website-files.com/64f5e1504c20c64e728469d9/6aa40757c6551b89b48d7688_FELIX%20Legit.ng%20Article_with_disclaimer%2019201080%20(10).png" alt="Felix Imoh INMA 30 Under 30 Award" loading="lazy">
-                    </a>
-                    <figcaption>Felix Imoh recognized by INMA</figcaption>
-                </figure>
-                <header>
-                    <time datetime="2026-09-11">September 11, 2026</time>
-                    <h3>
-                        <a href="https://www.legit.ng/editorial/1730258-felix-imoh-joins-inma-2026-30-30-class-nigerian-honoured/" target="_blank" rel="noopener noreferrer">
-                            Felix Imoh Joins The 2026 INMA 30 Under 30 Class, The Only Nigerian Honoured
-                        </a>
-                    </h3>
-                </header>
-                <p>Felix Imoh, Global PR Manager at Legit Media Group, has won in the Management category of the International News Media Association (INMA) 2026 “30 Under 30” Awards, the only Nigerian recipient in this year's class.</p>
-                <footer>
-                    <a href="https://www.legit.ng/editorial/1730258-felix-imoh-joins-inma-2026-30-30-class-nigerian-honoured/" target="_blank" rel="noopener noreferrer">Read article</a>
-                </footer>
-            </article>
+                    <!-- Article 5 -->
+                    <article class="card article-card">
+                        <figure class="card-media">
+                            <a href="https://www.legit.ng/editorial/1730258-felix-imoh-joins-inma-2026-30-30-class-nigerian-honoured/" target="_blank" rel="noopener noreferrer">
+                                <img src="https://cdn.prod.website-files.com/64f5e1504c20c64e728469d9/6aa40757c6551b89b48d7688_FELIX%20Legit.ng%20Article_with_disclaimer%2019201080%20(10).png" alt="Felix Imoh INMA 30 Under 30 Award" loading="lazy">
+                            </a>
+                            <figcaption>INMA 30 Under 30 Honouree</figcaption>
+                        </figure>
+                        <div class="card-content">
+                            <header class="card-header">
+                                <time datetime="2026-09-11" class="card-date">September 11, 2026</time>
+                                <h3 class="card-title">
+                                    <a href="https://www.legit.ng/editorial/1730258-felix-imoh-joins-inma-2026-30-30-class-nigerian-honoured/" target="_blank" rel="noopener noreferrer">
+                                        Felix Imoh Joins The 2026 INMA 30 Under 30 Class, The Only Nigerian Honoured
+                                    </a>
+                                </h3>
+                            </header>
+                            <p class="card-excerpt">Felix Imoh, Global PR Manager at Legit Media Group, has won in the Management category of the International News Media Association (INMA) 2026 “30 Under 30” Awards, the only Nigerian recipient in this year's class.</p>
+                            <footer class="card-footer">
+                                <a href="https://www.legit.ng/editorial/1730258-felix-imoh-joins-inma-2026-30-30-class-nigerian-honoured/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Read article &rarr;</a>
+                            </footer>
+                        </div>
+                    </article>
 
-            <!-- Article 6 -->
-            <article>
-                <figure>
-                    <a href="https://www.legit.ng/nigeria/1725663-legitng-editor-basit-jamiu-named-2026-reham-al-farra-fellow-nigerian-selected/" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.prod.website-files.com/64f5e1504c20c64e728469d9/6a8333ed3e1fd5fade3b1b82_FELIX%20Legit.ng%20Article_with_disclaimer%2019201080%20(9).png" alt="Basit Jamiu UN Reham Al-Farra Fellowship announcement" loading="lazy">
-                    </a>
-                    <figcaption>UN Reham Al-Farra Memorial Journalism Fellowship</figcaption>
-                </figure>
-                <header>
-                    <time datetime="2026-08-17">August 17, 2026</time>
-                    <h3>
-                        <a href="https://www.legit.ng/nigeria/1725663-legitng-editor-basit-jamiu-named-2026-reham-al-farra-fellow-nigerian-selected/" target="_blank" rel="noopener noreferrer">
-                            Legit.ng Editor Basit Jamiu Named 2026 UN Reham Al-Farra Fellow, Only Nigerian Selected
-                        </a>
-                    </h3>
-                </header>
-                <p>Basit Jamiu, Legit.ng's Current Affairs and Politics Editor, has been selected for the 2026 Reham Al-Farra (RAF) Memorial Journalism Fellowship, a professional development programme run by the United Nations.</p>
-                <footer>
-                    <a href="https://www.legit.ng/nigeria/1725663-legitng-editor-basit-jamiu-named-2026-reham-al-farra-fellow-nigerian-selected/" target="_blank" rel="noopener noreferrer">Read article</a>
-                </footer>
-            </article>
+                    <!-- Article 6 -->
+                    <article class="card article-card">
+                        <figure class="card-media">
+                            <a href="https://www.legit.ng/nigeria/1725663-legitng-editor-basit-jamiu-named-2026-reham-al-farra-fellow-nigerian-selected/" target="_blank" rel="noopener noreferrer">
+                                <img src="https://cdn.prod.website-files.com/64f5e1504c20c64e728469d9/6a8333ed3e1fd5fade3b1b82_FELIX%20Legit.ng%20Article_with_disclaimer%2019201080%20(9).png" alt="Basit Jamiu UN Reham Al-Farra Fellowship announcement" loading="lazy">
+                            </a>
+                            <figcaption>UN Journalism Fellowship</figcaption>
+                        </figure>
+                        <div class="card-content">
+                            <header class="card-header">
+                                <time datetime="2026-08-17" class="card-date">August 17, 2026</time>
+                                <h3 class="card-title">
+                                    <a href="https://www.legit.ng/nigeria/1725663-legitng-editor-basit-jamiu-named-2026-reham-al-farra-fellow-nigerian-selected/" target="_blank" rel="noopener noreferrer">
+                                        Legit.ng Editor Basit Jamiu Named 2026 UN Reham Al-Farra Fellow, Only Nigerian Selected
+                                    </a>
+                                </h3>
+                            </header>
+                            <p class="card-excerpt">Basit Jamiu, Legit.ng's Current Affairs and Politics Editor, has been selected for the 2026 Reham Al-Farra (RAF) Memorial Journalism Fellowship, a professional development programme run by the United Nations.</p>
+                            <footer class="card-footer">
+                                <a href="https://www.legit.ng/nigeria/1725663-legitng-editor-basit-jamiu-named-2026-reham-al-farra-fellow-nigerian-selected/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Read article &rarr;</a>
+                            </footer>
+                        </div>
+                    </article>
 
-            <!-- Article 7 -->
-            <article>
-                <figure>
-                    <a href="https://www.legit.ng/editorial/1717155-legitngs-ismaila-yinusa-named-41-recipients-2026-inma-africa-elevate-scholarship/" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.prod.website-files.com/64f5e1504c20c64e728469d9/6a4528c4fa2084342072e7cc_FELIX%20iunh.png" alt="Ismaila Yinusa INMA Africa Elevate Scholarship" loading="lazy">
-                    </a>
-                    <figcaption>INMA Africa Elevate Scholarship Recipient</figcaption>
-                </figure>
-                <header>
-                    <time datetime="2026-07-01">July 1, 2026</time>
-                    <h3>
-                        <a href="https://www.legit.ng/editorial/1717155-legitngs-ismaila-yinusa-named-41-recipients-2026-inma-africa-elevate-scholarship/" target="_blank" rel="noopener noreferrer">
-                            Ismaila Yinusa named among 41 recipients of 2026 INMA Africa Elevate Scholarship
-                        </a>
-                    </h3>
-                </header>
-                <p>Ismaila Yinusa, the Head of the Entertainment Desk at Legit.ng, has been selected among 41 other emerging news leaders for the 2026 INMA Africa Elevate Scholarship.</p>
-                <footer>
-                    <a href="https://www.legit.ng/editorial/1717155-legitngs-ismaila-yinusa-named-41-recipients-2026-inma-africa-elevate-scholarship/" target="_blank" rel="noopener noreferrer">Read article</a>
-                </footer>
-            </article>
+                    <!-- Article 7 -->
+                    <article class="card article-card">
+                        <figure class="card-media">
+                            <a href="https://www.legit.ng/editorial/1717155-legitngs-ismaila-yinusa-named-41-recipients-2026-inma-africa-elevate-scholarship/" target="_blank" rel="noopener noreferrer">
+                                <img src="https://cdn.prod.website-files.com/64f5e1504c20c64e728469d9/6a4528c4fa2084342072e7cc_FELIX%20iunh.png" alt="Ismaila Yinusa INMA Africa Elevate Scholarship" loading="lazy">
+                            </a>
+                            <figcaption>INMA Africa Elevate Scholar</figcaption>
+                        </figure>
+                        <div class="card-content">
+                            <header class="card-header">
+                                <time datetime="2026-07-01" class="card-date">July 1, 2026</time>
+                                <h3 class="card-title">
+                                    <a href="https://www.legit.ng/editorial/1717155-legitngs-ismaila-yinusa-named-41-recipients-2026-inma-africa-elevate-scholarship/" target="_blank" rel="noopener noreferrer">
+                                        Ismaila Yinusa named among 41 recipients of 2026 INMA Africa Elevate Scholarship
+                                    </a>
+                                </h3>
+                            </header>
+                            <p class="card-excerpt">Ismaila Yinusa, the Head of the Entertainment Desk at Legit.ng, has been selected among 41 other emerging news leaders for the 2026 INMA Africa Elevate Scholarship.</p>
+                            <footer class="card-footer">
+                                <a href="https://www.legit.ng/editorial/1717155-legitngs-ismaila-yinusa-named-41-recipients-2026-inma-africa-elevate-scholarship/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Read article &rarr;</a>
+                            </footer>
+                        </div>
+                    </article>
 
-            <!-- Article 8 -->
-            <article>
-                <figure>
-                    <a href="https://www.legit.ng/editorial/1715298-legitng-ranks-nigerias-top-online-news-brands-reuters-institute-2026-report/" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.prod.website-files.com/64f5e1504c20c64e728469d9/6a352a895e79d9553a2ccdcf_FELIX%20Legit.ng%20Article_with_disclaimer%2019201080%20(6).png" alt="Reuters Institute 2026 Report Rankings" loading="lazy">
-                    </a>
-                    <figcaption>Reuters Institute Digital News Report 2026</figcaption>
-                </figure>
-                <header>
-                    <time datetime="2026-06-19">June 19, 2026</time>
-                    <h3>
-                        <a href="https://www.legit.ng/editorial/1715298-legitng-ranks-nigerias-top-online-news-brands-reuters-institute-2026-report/" target="_blank" rel="noopener noreferrer">
-                            Legit.ng Ranks Among Nigeria's Top Online News Brands in Reuters Institute 2026 Report
-                        </a>
-                    </h3>
-                </header>
-                <p>Legit.ng ranks third for weekly online news reach in Nigeria in the Reuters Institute Digital News Report 2026, among the country's most-used online news brands.</p>
-                <footer>
-                    <a href="https://www.legit.ng/editorial/1715298-legitng-ranks-nigerias-top-online-news-brands-reuters-institute-2026-report/" target="_blank" rel="noopener noreferrer">Read article</a>
-                </footer>
-            </article>
+                    <!-- Article 8 -->
+                    <article class="card article-card">
+                        <figure class="card-media">
+                            <a href="https://www.legit.ng/editorial/1715298-legitng-ranks-nigerias-top-online-news-brands-reuters-institute-2026-report/" target="_blank" rel="noopener noreferrer">
+                                <img src="https://cdn.prod.website-files.com/64f5e1504c20c64e728469d9/6a352a895e79d9553a2ccdcf_FELIX%20Legit.ng%20Article_with_disclaimer%2019201080%20(6).png" alt="Reuters Institute 2026 Report Rankings" loading="lazy">
+                            </a>
+                            <figcaption>Reuters Institute Report 2026</figcaption>
+                        </figure>
+                        <div class="card-content">
+                            <header class="card-header">
+                                <time datetime="2026-06-19" class="card-date">June 19, 2026</time>
+                                <h3 class="card-title">
+                                    <a href="https://www.legit.ng/editorial/1715298-legitng-ranks-nigerias-top-online-news-brands-reuters-institute-2026-report/" target="_blank" rel="noopener noreferrer">
+                                        Legit.ng Ranks Among Nigeria's Top Online News Brands in Reuters Institute 2026 Report
+                                    </a>
+                                </h3>
+                            </header>
+                            <p class="card-excerpt">Legit.ng ranks third for weekly online news reach in Nigeria in the Reuters Institute Digital News Report 2026, among the country's most-used online news brands.</p>
+                            <footer class="card-footer">
+                                <a href="https://www.legit.ng/editorial/1715298-legitng-ranks-nigerias-top-online-news-brands-reuters-institute-2026-report/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Read article &rarr;</a>
+                            </footer>
+                        </div>
+                    </article>
 
-            <!-- Article 9 -->
-            <article>
-                <figure>
-                    <a href="https://www.legit.ng/business-economy/industry/1713954-inma-global-ceo-earl-wilkinson-visits-legitng-trip-nigeria/" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.prod.website-files.com/64f5e1504c20c64e728469d9/6a2999192f4bf494a670afb2_ggg.png" alt="Earl Wilkinson INMA CEO visits Legit.ng in Lagos" loading="lazy">
-                    </a>
-                    <figcaption>INMA Global CEO Visit to Nigeria</figcaption>
-                </figure>
-                <header>
-                    <time datetime="2026-06-10">June 10, 2026</time>
-                    <h3>
-                        <a href="https://www.legit.ng/business-economy/industry/1713954-inma-global-ceo-earl-wilkinson-visits-legitng-trip-nigeria/" target="_blank" rel="noopener noreferrer">
-                            INMA Global CEO Earl Wilkinson Visits Legit.ng on First Trip to Nigeria
-                        </a>
-                    </h3>
-                </header>
-                <p>The leadership of the International News Media Association (INMA) visited Legit.ng in Lagos this week, bringing one of the most influential figures in global news media into Nigeria for the first time.</p>
-                <footer>
-                    <a href="https://www.legit.ng/business-economy/industry/1713954-inma-global-ceo-earl-wilkinson-visits-legitng-trip-nigeria/" target="_blank" rel="noopener noreferrer">Read article</a>
-                </footer>
-            </article>
+                    <!-- Article 9 -->
+                    <article class="card article-card">
+                        <figure class="card-media">
+                            <a href="https://www.legit.ng/business-economy/industry/1713954-inma-global-ceo-earl-wilkinson-visits-legitng-trip-nigeria/" target="_blank" rel="noopener noreferrer">
+                                <img src="https://cdn.prod.website-files.com/64f5e1504c20c64e728469d9/6a2999192f4bf494a670afb2_ggg.png" alt="Earl Wilkinson INMA CEO visits Legit.ng in Lagos" loading="lazy">
+                            </a>
+                            <figcaption>INMA CEO Visit to Lagos</figcaption>
+                        </figure>
+                        <div class="card-content">
+                            <header class="card-header">
+                                <time datetime="2026-06-10" class="card-date">June 10, 2026</time>
+                                <h3 class="card-title">
+                                    <a href="https://www.legit.ng/business-economy/industry/1713954-inma-global-ceo-earl-wilkinson-visits-legitng-trip-nigeria/" target="_blank" rel="noopener noreferrer">
+                                        INMA Global CEO Earl Wilkinson Visits Legit.ng on First Trip to Nigeria
+                                    </a>
+                                </h3>
+                            </header>
+                            <p class="card-excerpt">The leadership of the International News Media Association (INMA) visited Legit.ng in Lagos this week, bringing one of the most influential figures in global news media into Nigeria for the first time.</p>
+                            <footer class="card-footer">
+                                <a href="https://www.legit.ng/business-economy/industry/1713954-inma-global-ceo-earl-wilkinson-visits-legitng-trip-nigeria/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Read article &rarr;</a>
+                            </footer>
+                        </div>
+                    </article>
 
-            <!-- Article 10 -->
-            <article>
-                <figure>
-                    <a href="https://www.legit.ng/business-economy/money/1705823-legitngs-felix-imoh-brings-media-ai-trading-floor-lagos-traders-fair-2026/" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.prod.website-files.com/64f5e1504c20c64e728469d9/69e12d9267f1dd49ab198485_FELIX%20Legit.ng%20Article_with_disclaimer%2019201080.png" alt="Felix Imoh at Lagos Traders Fair 2026" loading="lazy">
-                    </a>
-                    <figcaption>Felix Imoh presents at Lagos Traders Fair</figcaption>
-                </figure>
-                <header>
-                    <time datetime="2026-04-16">April 16, 2026</time>
-                    <h3>
-                        <a href="https://www.legit.ng/business-economy/money/1705823-legitngs-felix-imoh-brings-media-ai-trading-floor-lagos-traders-fair-2026/" target="_blank" rel="noopener noreferrer">
-                            Legit.ng's Felix Imoh Brings Media and AI to the Trading Floor at Lagos Traders Fair 2026
-                        </a>
-                    </h3>
-                </header>
-                <p>Felix Imoh, Global PR Manager at Legit, addressed traders and finance professionals at the Lagos Traders Fair 2026, delivering an insightful session on AI, media, and their growing influence on financial markets across Africa.</p>
-                <footer>
-                    <a href="https://www.legit.ng/business-economy/money/1705823-legitngs-felix-imoh-brings-media-ai-trading-floor-lagos-traders-fair-2026/" target="_blank" rel="noopener noreferrer">Read article</a>
-                </footer>
-            </article>
+                    <!-- Article 10 -->
+                    <article class="card article-card">
+                        <figure class="card-media">
+                            <a href="https://www.legit.ng/business-economy/money/1705823-legitngs-felix-imoh-brings-media-ai-trading-floor-lagos-traders-fair-2026/" target="_blank" rel="noopener noreferrer">
+                                <img src="https://cdn.prod.website-files.com/64f5e1504c20c64e728469d9/69e12d9267f1dd49ab198485_FELIX%20Legit.ng%20Article_with_disclaimer%2019201080.png" alt="Felix Imoh at Lagos Traders Fair 2026" loading="lazy">
+                            </a>
+                            <figcaption>Lagos Traders Fair 2026</figcaption>
+                        </figure>
+                        <div class="card-content">
+                            <header class="card-header">
+                                <time datetime="2026-04-16" class="card-date">April 16, 2026</time>
+                                <h3 class="card-title">
+                                    <a href="https://www.legit.ng/business-economy/money/1705823-legitngs-felix-imoh-brings-media-ai-trading-floor-lagos-traders-fair-2026/" target="_blank" rel="noopener noreferrer">
+                                        Legit.ng's Felix Imoh Brings Media and AI to the Trading Floor at Lagos Traders Fair 2026
+                                    </a>
+                                </h3>
+                            </header>
+                            <p class="card-excerpt">Felix Imoh, Global PR Manager at Legit, addressed traders and finance professionals at the Lagos Traders Fair 2026, delivering an insightful session on AI, media, and their growing influence on financial markets across Africa.</p>
+                            <footer class="card-footer">
+                                <a href="https://www.legit.ng/business-economy/money/1705823-legitngs-felix-imoh-brings-media-ai-trading-floor-lagos-traders-fair-2026/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Read article &rarr;</a>
+                            </footer>
+                        </div>
+                    </article>
 
-            <!-- Article 11 -->
-            <article>
-                <figure>
-                    <a href="https://www.legit.ng/entertainment/music/1693289-music-virality-infrastructure-legitngs-felix-imoh-calls-media-ownership-ambs-2026/" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.prod.website-files.com/64f5e1504c20c64e728469d9/697c9c286b77bf6dd42ddd04_FELIX%20x%20Legit.ng%20Template%20(9).png" alt="Felix Imoh at AFRIMA AMBS 2026" loading="lazy">
-                    </a>
-                    <figcaption>Keynote at AFRIMA AMBS 2026</figcaption>
-                </figure>
-                <header>
-                    <time datetime="2026-01-20">January 20, 2026</time>
-                    <h3>
-                        <a href="https://www.legit.ng/entertainment/music/1693289-music-virality-infrastructure-legitngs-felix-imoh-calls-media-ownership-ambs-2026/" target="_blank" rel="noopener noreferrer">
-                            ''Virality won’t save African Music,'' says Legit.ng’s Felix Imoh at AFRIMA’s AMBS 2026
-                        </a>
-                    </h3>
-                </header>
-                <p>Speaking to a packed audience of over 1,500, Felix Imoh challenged the industry to rethink the role of media in Africa’s music success story.</p>
-                <footer>
-                    <a href="https://www.legit.ng/entertainment/music/1693289-music-virality-infrastructure-legitngs-felix-imoh-calls-media-ownership-ambs-2026/" target="_blank" rel="noopener noreferrer">Read article</a>
-                </footer>
-            </article>
+                    <!-- Article 11 -->
+                    <article class="card article-card">
+                        <figure class="card-media">
+                            <a href="https://www.legit.ng/entertainment/music/1693289-music-virality-infrastructure-legitngs-felix-imoh-calls-media-ownership-ambs-2026/" target="_blank" rel="noopener noreferrer">
+                                <img src="https://cdn.prod.website-files.com/64f5e1504c20c64e728469d9/697c9c286b77bf6dd42ddd04_FELIX%20x%20Legit.ng%20Template%20(9).png" alt="Felix Imoh at AFRIMA AMBS 2026" loading="lazy">
+                            </a>
+                            <figcaption>AFRIMA AMBS 2026 Keynote</figcaption>
+                        </figure>
+                        <div class="card-content">
+                            <header class="card-header">
+                                <time datetime="2026-01-20" class="card-date">January 20, 2026</time>
+                                <h3 class="card-title">
+                                    <a href="https://www.legit.ng/entertainment/music/1693289-music-virality-infrastructure-legitngs-felix-imoh-calls-media-ownership-ambs-2026/" target="_blank" rel="noopener noreferrer">
+                                        ''Virality won’t save African Music,'' says Legit.ng’s Felix Imoh at AFRIMA’s AMBS 2026
+                                    </a>
+                                </h3>
+                            </header>
+                            <p class="card-excerpt">Speaking to a packed audience of over 1,500, Felix Imoh challenged the industry to rethink the role of media in Africa’s music success story.</p>
+                            <footer class="card-footer">
+                                <a href="https://www.legit.ng/entertainment/music/1693289-music-virality-infrastructure-legitngs-felix-imoh-calls-media-ownership-ambs-2026/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Read article &rarr;</a>
+                            </footer>
+                        </div>
+                    </article>
 
-            <!-- Article 12 -->
-            <article>
-                <figure>
-                    <a href="https://www.legit.ng/entertainment/celebrities/1686317-legitngs-felix-imoh-shares-creative-success-strategies-inspire-conference-by-kaa/" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.prod.website-files.com/64f5e1504c20c64e728469d9/693167b9919739ff854a026b_FELIX%20x%20Legit.ng%20Template%20(7).png" alt="Felix Imoh at Inspire Conference by KAA" loading="lazy">
-                    </a>
-                    <figcaption>Panel discussion at Kingdom Achievers Awards</figcaption>
-                </figure>
-                <header>
-                    <time datetime="2025-12-04">December 4, 2025</time>
-                    <h3>
-                        <a href="https://www.legit.ng/entertainment/celebrities/1686317-legitngs-felix-imoh-shares-creative-success-strategies-inspire-conference-by-kaa/" target="_blank" rel="noopener noreferrer">
-                            Legit.ng’s Felix Imoh Shares Creative Success Strategies at Inspire Conference by KAA
-                        </a>
-                    </h3>
-                </header>
-                <p>Felix Imoh, Legit.ng’s Public Relations Manager, shared practical, experience-driven guidance for creatives at the Kingdom Achievers Awards 2025 Inspire Conference. He spoke on a panel titled “Overcoming the Odds as a Creative” .</p>
-                <footer>
-                    <a href="https://www.legit.ng/entertainment/celebrities/1686317-legitngs-felix-imoh-shares-creative-success-strategies-inspire-conference-by-kaa/" target="_blank" rel="noopener noreferrer">Read article</a>
-                </footer>
-            </article>
+                    <!-- Article 12 -->
+                    <article class="card article-card">
+                        <figure class="card-media">
+                            <a href="https://www.legit.ng/entertainment/celebrities/1686317-legitngs-felix-imoh-shares-creative-success-strategies-inspire-conference-by-kaa/" target="_blank" rel="noopener noreferrer">
+                                <img src="https://cdn.prod.website-files.com/64f5e1504c20c64e728469d9/693167b9919739ff854a026b_FELIX%20x%20Legit.ng%20Template%20(7).png" alt="Felix Imoh at Inspire Conference by KAA" loading="lazy">
+                            </a>
+                            <figcaption>Inspire Conference Panel</figcaption>
+                        </figure>
+                        <div class="card-content">
+                            <header class="card-header">
+                                <time datetime="2025-12-04" class="card-date">December 4, 2025</time>
+                                <h3 class="card-title">
+                                    <a href="https://www.legit.ng/entertainment/celebrities/1686317-legitngs-felix-imoh-shares-creative-success-strategies-inspire-conference-by-kaa/" target="_blank" rel="noopener noreferrer">
+                                        Legit.ng’s Felix Imoh Shares Creative Success Strategies at Inspire Conference by KAA
+                                    </a>
+                                </h3>
+                            </header>
+                            <p class="card-excerpt">Felix Imoh, Legit.ng’s Public Relations Manager, shared practical, experience-driven guidance for creatives at the Kingdom Achievers Awards 2025 Inspire Conference. He spoke on a panel titled “Overcoming the Odds as a Creative” .</p>
+                            <footer class="card-footer">
+                                <a href="https://www.legit.ng/entertainment/celebrities/1686317-legitngs-felix-imoh-shares-creative-success-strategies-inspire-conference-by-kaa/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Read article &rarr;</a>
+                            </footer>
+                        </div>
+                    </article>
+                </div>
 
-            <!-- Pagination -->
-            <nav aria-label="Pagination">
-                <ul>
-                    <li><a href="?67b347f4_page=2" rel="next">Next &raquo;</a></li>
-                </ul>
-            </nav>
-        </section>
-
-        <!-- Sidebar / Supplementary Content (Aside) -->
-        <aside aria-labelledby="sidebar-heading">
-            <h2 id="sidebar-heading">Blog Resources &amp; Search</h2>
-
-            <!-- Blog Search Form -->
-            <section aria-labelledby="search-heading">
-                <h3 id="search-heading">Search Articles</h3>
-                <form role="search" action="/blog" method="get">
-                    <label for="search-input">Search the blog:</label>
-                    <input type="search" id="search-input" name="query" placeholder="Search news and updates..." required>
-                    <button type="submit">Search</button>
-                </form>
-            </section>
-
-            <!-- Newsletter Subscription Form -->
-            <section aria-labelledby="newsletter-heading">
-                <h3 id="newsletter-heading">Subscribe to Legit.ng Updates</h3>
-                <form action="#" method="post">
-                    <fieldset>
-                        <legend>Newsletter Sign-Up</legend>
-                        <p>Get the latest press releases and industry updates delivered to your inbox.</p>
-                        <label for="newsletter-email">Email Address:</label>
-                        <input type="email" id="newsletter-email" name="email" placeholder="example@domain.com" required>
-                        <button type="submit">Subscribe</button>
-                    </fieldset>
-                </form>
-            </section>
-
-            <!-- Blog Categories Navigation -->
-            <section aria-labelledby="categories-heading">
-                <h3 id="categories-heading">Categories</h3>
-                <nav aria-label="Blog Categories">
+                <!-- Pagination -->
+                <nav class="pagination-nav" aria-label="Pagination">
                     <ul>
-                        <li><a href="/category/awards">Awards &amp; Recognition</a></li>
-                        <li><a href="/category/editorial">Editorial &amp; Journalism</a></li>
-                        <li><a href="/category/partnerships">Strategic Partnerships</a></li>
-                        <li><a href="/category/events">Conferences &amp; Events</a></li>
-                        <li><a href="/category/digital-media">Digital Media Insights</a></li>
+                        <li><a href="?67b347f4_page=2" class="btn btn-outline" rel="next">Next Page &raquo;</a></li>
                     </ul>
                 </nav>
             </section>
 
-            <!-- Featured Corporate Media -->
-            <section aria-labelledby="media-heading">
-                <h3 id="media-heading">Featured Media</h3>
-                <figure>
-                    <video controls width="320">
-                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <figcaption>Legit Media Group corporate overview and video production showcase.</figcaption>
-                </figure>
-            </section>
-        </aside>
+            <!-- Sidebar / Supplementary Content (Aside) -->
+            <aside class="sidebar" id="blog-sidebar" aria-labelledby="sidebar-heading">
+                <h2 id="sidebar-heading" style="display: none;">Blog Resources &amp; Search</h2>
+
+                <!-- Blog Search Form -->
+                <section class="card sidebar-card" aria-labelledby="search-heading">
+                    <h3 id="search-heading">Search Articles</h3>
+                    <form role="search" action="/blog" method="get">
+                        <label for="search-input" class="form-label">Search the blog:</label>
+                        <input type="search" id="search-input" name="query" placeholder="Search news and updates..." required>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Search</button>
+                    </form>
+                </section>
+
+                <!-- Newsletter Subscription Form -->
+                <section class="card sidebar-card" aria-labelledby="newsletter-heading">
+                    <h3 id="newsletter-heading">Subscribe to Legit.ng Updates</h3>
+                    <form action="#" method="post" id="newsletter-form">
+                        <fieldset class="form-fieldset">
+                            <legend class="form-legend">Newsletter Sign-Up</legend>
+                            <p class="form-desc">Get the latest press releases and industry updates delivered to your inbox.</p>
+                            <label for="newsletter-email" class="form-label">Email Address:</label>
+                            <input type="email" id="newsletter-email" name="email" placeholder="example@domain.com" required>
+                            <button type="submit" class="btn btn-accent" style="width: 100%;">Subscribe</button>
+                        </fieldset>
+                    </form>
+                </section>
+
+                <!-- Blog Categories Navigation -->
+                <section class="card sidebar-card" aria-labelledby="categories-heading">
+                    <h3 id="categories-heading">Categories</h3>
+                    <nav aria-label="Blog Categories">
+                        <ul class="category-list">
+                            <li><a href="/category/awards" class="category-pill">Awards &amp; Recognition</a></li>
+                            <li><a href="/category/editorial" class="category-pill">Editorial &amp; Journalism</a></li>
+                            <li><a href="/category/partnerships" class="category-pill">Strategic Partnerships</a></li>
+                            <li><a href="/category/events" class="category-pill">Conferences &amp; Events</a></li>
+                            <li><a href="/category/digital-media" class="category-pill">Digital Media Insights</a></li>
+                        </ul>
+                    </nav>
+                </section>
+
+                <!-- Featured Corporate Media -->
+                <section class="card sidebar-card" aria-labelledby="media-heading">
+                    <h3 id="media-heading">Featured Media</h3>
+                    <figure class="featured-video-box">
+                        <video controls width="320">
+                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <figcaption>Legit Media Group corporate overview and video production showcase.</figcaption>
+                    </figure>
+                </section>
+            </aside>
+        </div>
     </main>
 
     <!-- Site Footer -->
-    <footer>
-        <h2>Corporate &amp; Contact Information</h2>
+    <footer class="site-footer" id="site-footer">
+        <div class="container">
+            <div class="footer-header">
+                <h2>Corporate &amp; Contact Information</h2>
+                <!-- Footer Logo -->
+                <a href="https://www.legit.ng/" target="_blank" rel="noopener noreferrer" aria-label="Legit.ng Homepage">
+                    <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e5ec0b6c1443c87e0a_legit-slogan-Transparent.png" alt="Legit.ng - Leading the Way" width="220" height="60" class="footer-logo">
+                </a>
+            </div>
 
-        <!-- Footer Logo -->
-        <a href="https://www.legit.ng/" target="_blank" rel="noopener noreferrer" aria-label="Legit.ng Homepage">
-            <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e5ec0b6c1443c87e0a_legit-slogan-Transparent.png" alt="Legit.ng - Leading the Way" width="220" height="60">
-        </a>
+            <div class="footer-grid">
+                <!-- Awards & Recognitions Section -->
+                <section class="footer-section" aria-labelledby="awards-heading">
+                    <h3 id="awards-heading">Awards &amp; Recognitions</h3>
+                    <ul class="footer-awards-list">
+                        <li>
+                            <a href="https://wan-ifra.org/2025/04/wan-ifra-announces-the-winners-of-the-digital-media-awards-africa-2025/" target="_blank" rel="noopener noreferrer">
+                                <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/68e367debf9b1536896869bc_72de0d3f2c03cbc58a1679b031a8e289_wan-ifra-best-use-ai%20.png" alt="WAN-IFRA Best Use of AI in the Newsroom 2025 Award" width="120" height="120">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.legit.ng/1425970-2021-africa-digital-media-awards-legitng-emerges-news-website.html" target="_blank" rel="noopener noreferrer">
+                                <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f58bc86c6b3f1ee348686c_bestNews%20Award.png" alt="WAN-IFRA Best News Website 2021 Award" width="120" height="120">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.legit.ng/1405059-legitng-member-united-nations-sustainable-development-goals-media-compact.html" target="_blank" rel="noopener noreferrer">
+                                <img src="https://cdn.prod.website-files.com/64f1bc37dbffae8a63039ba2/64f271d67f01443dc5a7dba5_SDG_Media_Compact_Ma.png" alt="United Nations SDG Media Compact Member Badge" width="120" height="120">
+                            </a>
+                        </li>
+                    </ul>
+                </section>
 
-        <!-- Awards & Recognitions Section -->
-        <section aria-labelledby="awards-heading">
-            <h3 id="awards-heading">Awards &amp; Recognitions</h3>
-            <ul>
-                <li>
-                    <a href="https://wan-ifra.org/2025/04/wan-ifra-announces-the-winners-of-the-digital-media-awards-africa-2025/" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/68e367debf9b1536896869bc_72de0d3f2c03cbc58a1679b031a8e289_wan-ifra-best-use-ai%20.png" alt="WAN-IFRA Best Use of AI in the Newsroom 2025 Award" width="120" height="120">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.legit.ng/1425970-2021-africa-digital-media-awards-legitng-emerges-news-website.html" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f58bc86c6b3f1ee348686c_bestNews%20Award.png" alt="WAN-IFRA Best News Website 2021 Award" width="120" height="120">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.legit.ng/1405059-legitng-member-united-nations-sustainable-development-goals-media-compact.html" target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.prod.website-files.com/64f1bc37dbffae8a63039ba2/64f271d67f01443dc5a7dba5_SDG_Media_Compact_Ma.png" alt="United Nations SDG Media Compact Member Badge" width="120" height="120">
-                    </a>
-                </li>
-            </ul>
-        </section>
+                <!-- Contact Information Section -->
+                <section class="footer-section" aria-labelledby="contact-heading">
+                    <h3 id="contact-heading">Contact Information</h3>
+                    <address>
+                        <h4>General Issues</h4>
+                        <ul>
+                            <li>Telephone: <a href="tel:08160636303">08160636303</a></li>
+                            <li>Email: <a href="mailto:info@corp.legit.ng?subject=General%20Issues">info@corp.legit.ng</a></li>
+                        </ul>
 
-        <!-- Contact Information Section -->
-        <section aria-labelledby="contact-heading">
-            <h3 id="contact-heading">Contact Information</h3>
-            <address>
-                <h4>General Issues</h4>
-                <ul>
-                    <li>Telephone: <a href="tel:08160636303">08160636303</a></li>
-                    <li>Email: <a href="mailto:info@corp.legit.ng?subject=General%20Issues">info@corp.legit.ng</a></li>
-                </ul>
+                        <h4>Sales &amp; Marketing Team</h4>
+                        <ul>
+                            <li>Telephone: <a href="tel:08103044899">08103044899</a></li>
+                            <li>Email: <a href="mailto:ads@corp.legit.ng?subject=General%20Issues">ads@corp.legit.ng</a></li>
+                        </ul>
+                    </address>
+                </section>
 
-                <h4>Sales &amp; Marketing Team</h4>
-                <ul>
-                    <li>Telephone: <a href="tel:08103044899">08103044899</a></li>
-                    <li>Email: <a href="mailto:ads@corp.legit.ng?subject=General%20Issues">ads@corp.legit.ng</a></li>
-                </ul>
-            </address>
-        </section>
+                <!-- Social Media & External Links Navigation -->
+                <nav class="footer-section" aria-label="Social Media and Links">
+                    <h3 class="footer-heading">Follow Legit.ng</h3>
+                    <p><a href="https://www.legit.ng/" target="_blank" rel="noopener noreferrer">Visit legit.ng &rarr;</a></p>
+                    <ul class="footer-social-list">
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCwd8fNhb8OPLPSNELSys9pg" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                                <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e6f6f2d9b891cca3c7_youtube_yellow.png" alt="YouTube" width="24" height="24">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/@legitngnews" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                                <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e66921a8f1356315f1_tik_tok_yellow.png" alt="TikTok" width="24" height="24">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/legit.ng/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e59d914de177dbbc8d_inst_yellow.png" alt="Instagram" width="24" height="24">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/legit-ng/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e84ee87c113fc6236e_likidin_yellow.png" alt="LinkedIn" width="24" height="24">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/legitngnews" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e595d2817bbfd94082_fb_yellow.png" alt="Facebook" width="24" height="24">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.pinterest.com/Legitng/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+                                <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e6b3bd2af3ca8d3102_pinterest_yellow.svg" alt="Pinterest" width="24" height="24">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/legitngnews" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
+                                <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/671a3a41ee3e053e1524d502_yellow_twitter.svg" alt="Twitter / X" width="24" height="24">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://mastodon.social/@legitng" target="_blank" rel="noopener noreferrer" aria-label="Mastodon">
+                                <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e521d0652d09d0064d_Mastodon_yellow.svg" alt="Mastodon" width="24" height="24">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/legitng" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                                <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e621d0652d09d007c7_telegram_yellow.png" alt="Telegram" width="24" height="24">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://whatsapp.com/channel/0029Val0muzGk1FtQ47EA81b" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Channel">
+                                <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/6528f7c07f404ba1fd850593_whatsapp%20channle%20legit.ng.png" alt="WhatsApp Channel" width="24" height="24">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.threads.net/@legit.ng" target="_blank" rel="noopener noreferrer" aria-label="Threads">
+                                <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e56a5bfc55e5f64d5a_Threads_yellow.svg" alt="Threads" width="24" height="24">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://play.google.com/store/apps/details?id=com.naij.android" target="_blank" rel="noopener noreferrer" aria-label="Download Android App on Google Play">
+                                <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e582e4558a2ed5c8f9_google-play-badge_colorful.png" alt="Google Play Store Badge" width="139" height="40">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
 
-        <!-- Social Media & External Links Navigation -->
-        <nav aria-label="Social Media and Links">
-            <h3>Follow Legit.ng</h3>
-            <p><a href="https://www.legit.ng/" target="_blank" rel="noopener noreferrer">Visit legit.ng</a></p>
-            <ul>
-                <li>
-                    <a href="https://www.youtube.com/channel/UCwd8fNhb8OPLPSNELSys9pg" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-                        <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e6f6f2d9b891cca3c7_youtube_yellow.png" alt="YouTube" width="34" height="34">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.tiktok.com/@legitngnews" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-                        <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e66921a8f1356315f1_tik_tok_yellow.png" alt="TikTok" width="34" height="34">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/legit.ng/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                        <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e59d914de177dbbc8d_inst_yellow.png" alt="Instagram" width="34" height="34">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/company/legit-ng/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e84ee87c113fc6236e_likidin_yellow.png" alt="LinkedIn" width="34" height="34">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/legitngnews" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                        <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e595d2817bbfd94082_fb_yellow.png" alt="Facebook" width="34" height="34">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.pinterest.com/Legitng/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
-                        <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e6b3bd2af3ca8d3102_pinterest_yellow.svg" alt="Pinterest" width="34" height="34">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/legitngnews" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
-                        <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/671a3a41ee3e053e1524d502_yellow_twitter.svg" alt="Twitter / X" width="34" height="34">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://mastodon.social/@legitng" target="_blank" rel="noopener noreferrer" aria-label="Mastodon">
-                        <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e521d0652d09d0064d_Mastodon_yellow.svg" alt="Mastodon" width="34" height="34">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://t.me/legitng" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
-                        <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e621d0652d09d007c7_telegram_yellow.png" alt="Telegram" width="34" height="34">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://whatsapp.com/channel/0029Val0muzGk1FtQ47EA81b" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Channel">
-                        <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/6528f7c07f404ba1fd850593_whatsapp%20channle%20legit.ng.png" alt="WhatsApp Channel" width="34" height="34">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.threads.net/@legit.ng" target="_blank" rel="noopener noreferrer" aria-label="Threads">
-                        <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e56a5bfc55e5f64d5a_Threads_yellow.svg" alt="Threads" width="34" height="34">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://play.google.com/store/apps/details?id=com.naij.android" target="_blank" rel="noopener noreferrer" aria-label="Download Android App on Google Play">
-                        <img src="https://cdn.prod.website-files.com/64f28ed14ae531679c7625dd/64f5a0e582e4558a2ed5c8f9_google-play-badge_colorful.png" alt="Google Play Store Badge" width="139" height="40">
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- Copyright Statement -->
-        <p><small>&copy; 2026 Legit.ng. All rights reserved.</small></p>
+            <div class="footer-bottom">
+                <p><small>&copy; 2026 Legit.ng. All rights reserved.</small></p>
+            </div>
+        </div>
     </footer>
 
 </body>
